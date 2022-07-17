@@ -8,18 +8,24 @@ function SpecialistListComponent() {
   const [specialists, setSpecialists] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/specialists/all`).then((res) => {
-      setSpecialists(res.data);
-    });
+    axios
+      .get(`https://pms-specialist-microservice.herokuapp.com/specialists/all`)
+      .then((res) => {
+        setSpecialists(res.data);
+      });
   });
 
   function deleteSpecialist(e, id) {
     e.preventDefault();
     const clicked = e.target;
     clicked.innerText = "Deleting...";
-    axios.delete(`http://localhost:4000/specialists/${id}`).then((res) => {
-      clicked.closest("tr").remove();
-    });
+    axios
+      .delete(
+        `https://pms-specialist-microservice.herokuapp.com/specialists/${id}`
+      )
+      .then((res) => {
+        clicked.closest("tr").remove();
+      });
   }
 
   const history = useNavigate();

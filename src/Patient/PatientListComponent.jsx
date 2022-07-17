@@ -8,18 +8,22 @@ function PatientListComponent() {
   const [patients, setPatients] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:2000/patients/all`).then((res) => {
-      setPatients(res.data);
-    });
+    axios
+      .get(`https://pms-patient-microservice.herokuapp.com/patients/all`)
+      .then((res) => {
+        setPatients(res.data);
+      });
   }, []);
 
   function deletePatient(e, id) {
     e.preventDefault();
     const clicked = e.target;
     clicked.innerText = "Deleting...";
-    axios.delete(`http://localhost:2000/patients/${id}`).then((res) => {
-      clicked.closest("tr").remove();
-    });
+    axios
+      .delete(`https://pms-patient-microservice.herokuapp.com/patients/${id}`)
+      .then((res) => {
+        clicked.closest("tr").remove();
+      });
   }
 
   const history = useNavigate();

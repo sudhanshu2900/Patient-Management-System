@@ -13,15 +13,20 @@ function UpdatePatientForm() {
   const navigate = useNavigate();
 
   const updateInfo = async (data) => {
-    await axios.put(`http://localhost:2000/patients/update`, {
-      id: id,
-      ...data,
-    });
+    await axios.put(
+      `https://pms-patient-microservice.herokuapp.com/patients/update`,
+      {
+        id: id,
+        ...data,
+      }
+    );
     navigate("/patientlist");
   };
 
   const loadPatient = async () => {
-    const result = await axios.get(`http://localhost:2000/patients/${id}`);
+    const result = await axios.get(
+      `https://pms-patient-microservice.herokuapp.com/patients/${id}`
+    );
     setValue("name", result?.data?.name);
     setValue("age", result?.data?.age);
     setValue("gender", result?.data?.gender);

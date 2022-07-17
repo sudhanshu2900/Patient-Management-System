@@ -12,7 +12,7 @@ function PatientDetailsList() {
 
   const fun = async () => {
     const result = await axios.get(
-      `http://localhost:2000/patients/${patientId}`
+      `https://pms-patient-microservice.herokuapp.com/patients/${patientId}`
     );
     setPatients(result?.data);
   };

@@ -26,13 +26,13 @@ function LoginForm() {
   const login = async (data) => {
     try {
       const res = await axios.post(
-        `http://localhost:1000/api/v1/auth/login`,
+        `https://pms-auth-microservice.herokuapp.com/api/v1/auth/login`,
         data
       );
 
       if (res?.data) {
         const user = await axios.get(
-          `http://localhost:1000/api/v1/auth/userinfo`,
+          `https://pms-auth-microservice.herokuapp.com/api/v1/auth/userinfo`,
           {
             headers: { Authorization: `Bearer ${res?.data?.token}` },
           }

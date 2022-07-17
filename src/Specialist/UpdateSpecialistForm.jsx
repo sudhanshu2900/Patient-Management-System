@@ -13,15 +13,20 @@ function UpdateSpecialistForm() {
   const navigate = useNavigate();
 
   const updateInfo = async (data) => {
-    await axios.put(`http://localhost:4000/specialists/update`, {
-      id: id,
-      ...data,
-    });
+    await axios.put(
+      `https://pms-specialist-microservice.herokuapp.com/specialists/update`,
+      {
+        id: id,
+        ...data,
+      }
+    );
     navigate("/specialistlist");
   };
 
   const loadSpecialist = async () => {
-    const result = await axios.get(`http://localhost:4000/specialists/${id}`);
+    const result = await axios.get(
+      `https://pms-specialist-microservice.herokuapp.com/specialists/${id}`
+    );
     setValue("name", result?.data?.name);
     setValue("age", result?.data?.age);
     setValue("gender", result?.data?.gender);

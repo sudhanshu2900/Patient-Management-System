@@ -38,7 +38,10 @@ function AddSpecialistForm() {
   const navigate = useNavigate();
 
   const submitInfo = async (data) => {
-    await axios.post(`http://localhost:4000/specialists/add`, data);
+    await axios.post(
+      `https://pms-specialist-microservice.herokuapp.com/specialists/add`,
+      data
+    );
     reset();
 
     navigate("/specialistlist");

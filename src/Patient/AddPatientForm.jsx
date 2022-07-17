@@ -39,7 +39,10 @@ function AddPatientForm() {
   const navigate = useNavigate();
 
   const submitInfo = async (data) => {
-    await axios.post(`http://localhost:2000/patients/add`, data);
+    await axios.post(
+      `https://pms-patient-microservice.herokuapp.com/patients/add`,
+      data
+    );
     reset();
 
     navigate("/patientlist");
