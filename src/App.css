@@ -1,0 +1,52 @@
+.boxMain {
+  padding: 50px;
+  box-shadow: 1px 1px 5px 5px lightblue;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  margin: 100px 0;
+}
+
+h1{
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+h2{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+button {
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid green;
+  background-color: lightgreen;
+}
+
+
+/* --- Card Page CSS Start --- */
+
+.boxHome {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px lightblue;
+  margin: 100px 0;
+  background-color: #fff;
+}
+
+/* --- Card Page CSS End --- */
+
+span{
+  font-size: 12px;
+  font-weight: 700;
+  color: red;
+}

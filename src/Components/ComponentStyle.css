@@ -1,0 +1,127 @@
+/* --- Footer CSS Start --- */
+
+.boxFoot {
+    padding: 20px;
+    border: 2px solid rgb(101, 213, 250);
+    border-radius: 10px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    width: 60%;
+    margin: auto;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.icons:hover {
+    filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% / 0.5));
+}
+
+
+/* --- Footer CSS End --- */
+
+
+/* --- Service Card CSS Start --- */
+
+.card {
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+    padding: 30px;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    background-color: rgb(191, 250, 191);
+  }
+  
+  p {
+    font-size: 30px;
+  }
+
+/* --- Service Card CSS End --- */
+
+
+/* --- Login Form CSS Start --- */
+
+.loginForm{
+  width: 50%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* --- Login Form CSS End --- */
+
+
+/* --- Add Patient & Add Specialist Form CSS Start --- */
+
+label{
+  font-weight: 800;
+}
+
+.patientForm, .specialistForm{
+  background-color: #fff;
+  padding: 30px;
+  margin:30px;
+  border-radius: 10px;
+}
+
+/* --- Add Patient & Add Specialist Form CSS End --- */
+
+
+/* --- Medicine and Treatment Chart CSS Start --- */
+
+.medicineTreatment{
+  background-color: #fff;
+  padding: 30px;
+  margin:30px;
+  border-radius: 10px;
+}
+
+#twoBtn{
+  margin: 0 5px;
+}
+
+#leftBtn, #rightBtn{
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+#leftBtn:hover, #rightBtn:hover{
+  background-color: aquamarine;
+}
+
+
+.myContainer{
+  padding: 0 50px;
+  background-color: #fff;
+}
+
+.listdiv{
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+#displayMedicineList, #displayTreatmentList{
+  width: 100%;
+  border: 2px solid lightgray;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+#displayMedicineList h5, #displayTreatmentList h5{
+  margin-bottom: 20px;
+}
+
+
+/* --- Medicine and Treatment Chart CSS End --- */
+

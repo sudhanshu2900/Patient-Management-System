@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(214, 246, 255);
+  font-family: 'Comfortaa', cursive;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+code {
+  font-family: 'Comfortaa', cursive;
+}
