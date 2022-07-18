@@ -12,4 +12,7 @@ Backend Tech: Java, Maven, Spring data JPA, Spring Boot, Junit.<br><br>
 Other microservices code is present here-<br>
 Patient Microservice: https://github.com/sudhanshu2900/Patient-Management-System-patient-microservice <br>
 Specialist Microservice: https://github.com/sudhanshu2900/Patient-Management-System-specialist-microservice <br>
-Authentication Microservice: https://github.com/sudhanshu2900/Patient-Management-System-authentication-microservice
+Authentication Microservice: https://github.com/sudhanshu2900/Patient-Management-System-authentication-microservice <br><br>
+
+NOTE: Application Username: sudhanshu2900 <br>
+Password: sid@12345
